@@ -1,5 +1,5 @@
 # .github/workflows/release.yml
-name: Release
+name: Semantic Release
 
 on:
   push:
@@ -8,15 +8,17 @@ on:
 
 jobs:
   release:
-    name: Release using release-please
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
 
     steps:
-      - name: Release Please
-        uses: google-github-actions/release-please-action@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          release-type: simple
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: 22
+
+      - run: npm ci
+
+      - name: Semantic Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
