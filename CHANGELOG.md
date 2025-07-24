@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/AK2083/test-release/compare/v1.0.0...v1.0.1) (2025-07-24)
+
+
+### Bug Fixes
+
+* **test:** fix something else ([450f309](https://github.com/AK2083/test-release/commit/450f30949d41307c793e6d1655b6cecbfe7d0748))
+
 # 1.0.0 (2025-07-24)
 
 
