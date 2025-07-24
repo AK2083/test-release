@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/AK2083/test-release/compare/v1.0.2...v1.0.3) (2025-07-24)
+
+
+### Performance Improvements
+
+* **test:** add ([6e3701a](https://github.com/AK2083/test-release/commit/6e3701a9658d734602bc591a43012a67f7d60e42))
+
 ## [1.0.2](https://github.com/AK2083/test-release/compare/v1.0.1...v1.0.2) (2025-07-24)
 
 ### Bug Fixes
