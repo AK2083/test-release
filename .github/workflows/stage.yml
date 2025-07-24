@@ -29,4 +29,10 @@ jobs:
         run: npm run check-format
         
       - name: Run Tests
-        run: npm run test -- --watch=false --browsers=ChromeHeadless
+        run: npm run test -- --watch=false --browsers=ChromeHeadless --code-coverage
+
+      - name: Upload Coverage Report as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: code-coverage-report
+          path: coverage/test-release/
